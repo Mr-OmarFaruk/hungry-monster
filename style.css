@@ -1,0 +1,145 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+/*Navigation Bar Styling Start*/
+nav{
+    margin: 0 30px;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+nav ul li{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+#logo{
+    margin-right: auto;
+}
+nav ul li:hover{
+    background-color: orange;
+    font-weight: bold;
+}
+nav ul li:hover a{
+    color: white;
+}
+/*Navigation Bar Styling end*/
+
+/*Search Bar Styling Start*/
+#search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+}
+#search-bar > div{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F7F5;
+    padding: 15px 0 15px 15px;
+    border-radius: 10px 0 0 10px;
+}
+#search-bar > div > input{
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
+#search-bar > button{
+    font-size: 20px;
+    padding: 25px;
+    margin: 0;
+    border: none;
+    background-color: orange;
+    color: white;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+#search-bar > div > img{
+    width: 30px;
+}
+#error-message{
+    text-align: center;
+    display: none;
+    color: tomato;
+}
+/*Search Bar Styling end*/
+
+/*Search Result Area Styling Start*/
+#search-results-area{
+    display: grid;
+    gap: 50px;
+    justify-content: center;
+}
+@media (max-width: 600px){
+    #search-results-area{
+        grid-template-columns: repeat(1, 200px);
+    }
+}
+@media (min-width: 600px){
+    #search-results-area{
+        grid-template-columns: repeat(2, 200px);
+    }
+}
+@media (min-width: 768px){
+    #search-results-area{
+        grid-template-columns: repeat(3, 200px);
+    }
+}
+@media (min-width: 992px){
+    #search-results-area{
+        grid-template-columns: repeat(4, 200px);
+    }
+}
+#search-results-area > div{
+    background-color: #f1f1f1;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 15px;
+}
+#search-results-area > div > img{
+    width: 200px;
+    border-radius: 15px 15px 0 0;
+}
+/*Search Result Area Styling end*/
+
+/*Details Info Area Styling Start*/
+#details-area{
+    display: none;
+}
+#details-area div{
+    width: max-content;
+    margin: 50px auto;
+}
+#details-area img{
+    width: 300px;
+    border-radius: 10px;
+}
+#ingredients-list{
+    list-style: none;
+    padding: 0;
+}
+#ingredients-list img{
+    width: 20px;
+    margin-right: 5px;
+}
+#ingredients-list li{
+    display: flex;
+    line-height: 0;
+    align-items: center;
+    margin: 5px 0;
+}
+#ingredients-list p{
+    margin: 0;
+}
+/*Details Info Area Styling end*/
